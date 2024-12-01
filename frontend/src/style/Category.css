@@ -1,0 +1,33 @@
+.container{
+    border: 1px solid red;
+    border-radius: 1rem;
+    width: 40%;
+    text-align: center;
+}
+.category-image{
+    border: 1px black solid;
+    border-radius: 1rem;
+    width: 80%;
+    height: 50px;
+    margin: 1rem;
+}
+.title{
+    font-style: italic;
+    padding: 1rem;
+}
+.teams{
+    display: flex;
+    justify-content: center;
+}
+.teams>div{
+    display: flex;
+    margin: .5rem;
+    padding: .5rem;
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.desc{
+    padding: 1rem;
+}

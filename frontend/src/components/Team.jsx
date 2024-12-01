@@ -10,7 +10,7 @@ function Team({ image, Name, League, stars, team_Ratings}) {
             <div key={image}>
                 <img className="team-logo" src={image} alt={`${Name} logo`} />
                 <h2 className="team-name">{Name}</h2>
-                <p className="league">League: {League}</p>
+                <p className="league">{League}</p>
                 <div className="stars">
                 {
 
@@ -34,10 +34,35 @@ function Team({ image, Name, League, stars, team_Ratings}) {
                 }
                 </div>
                 <div className="ratings">
-                    <div>{team_Ratings?.ATT}</div>
-                    <div>{team_Ratings?.MID}</div>
-                    <div>{team_Ratings?.DEF}</div>
-                    <div>{team_Ratings?.OVR}</div>
+
+                    <div className="rating-item">
+                        <div className="rating-title">
+                            ATT
+                        </div>
+                        <div className="rating-box">{team_Ratings?.ATT}</div>
+                    </div>
+
+                    <div className="rating-item">
+                        <div className="rating-title">
+                            MID
+                        </div>
+                        <div className="rating-box"> {team_Ratings?.MID}</div>
+                    </div>
+
+
+                    <div className="rating-item">
+                        <div className="rating-title">
+                            DEF
+                        </div>
+                       <div className="rating-box">{team_Ratings?.DEF}</div> 
+                    </div>
+
+                    <div className="rating-item">
+                        <div className="rating-title">
+                            OVR
+                        </div>
+                        <div className="rating-box">{team_Ratings?.OVR}</div>
+                    </div>
                 </div>
             </div>
         </div>

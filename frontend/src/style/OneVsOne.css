@@ -1,0 +1,39 @@
+.container{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    font-style: italic;
+}
+.team-selection-container{
+    text-align: center;
+}
+.team-selection-container > button{
+    background-color: rgb(67, 133, 89);
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.team-selection-container > button:hover{
+    background-color: rgb(54, 104, 71);
+    cursor: pointer;
+    border: none;
+}
+.team-selection{
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+    border:1px solid #f4f4f4;
+    background-color: #409652;
+    border-radius: 14px;
+    justify-content: center;
+}
+.versus{
+    text-align: center;
+    align-self: center;
+}
+.team-selection>div{
+    padding: 1rem;
+}
